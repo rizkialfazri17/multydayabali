@@ -1,9 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 body {
   line-height: 1.4;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
+}
+
+html, body{
+  overflow-x: hidden;
 }
 
 p {
@@ -144,7 +156,7 @@ a:focus, a:hover {
   top: 0;
   width: 100%;
   z-index: 999999999;
-  -webkit-filter: alpha(opacity=100);
+  -webkit-filter:;
 }
 
 .btn.active:focus, .btn:active:focus, .btn:focus {
@@ -729,7 +741,7 @@ a:focus, a:hover {
 }
 @media (max-width: 768px) {
   .hero-slider .prevArrow,
-.hero-slider .nextArrow {
+  .hero-slider .nextArrow {
     display: none !important;
   }
 }
@@ -1874,7 +1886,7 @@ a:focus, a:hover {
 }
 
 /*=================================================================
-  Footer section
+  TOS
 ==================================================================*/
 .terms-of-service h1 {
   font-size: 28px;
